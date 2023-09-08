@@ -1,4 +1,4 @@
-package com.jbd;
+package com.jbd.basic;
 
 import java.util.Scanner;
 

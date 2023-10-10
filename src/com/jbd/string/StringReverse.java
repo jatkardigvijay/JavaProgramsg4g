@@ -17,16 +17,12 @@ public class StringReverse {
 	private static void reverse(String string) {
 
 		String reverse = "";
-		System.out.println("1");
 		char[] ch = string.toCharArray();
-		System.out.println("2");
-		for (int i = ch.length; i > 0; i--) {
-			System.out.println("3");
+		for (int i = ch.length - 1; i >= 0; i--) {
+
 			reverse = reverse + ch[i];
-			System.out.println("4");
 
 		}
-		System.out.println("5");
-		System.out.println("Reverse string of " + string + " is : " + reverse);
+		System.out.println("Reversed string of " + string + " is : " + reverse);
 	}
 }

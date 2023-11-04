@@ -11,22 +11,27 @@ public class PrimeNumbersFrom1ToN {
 		Scanner input = new Scanner(System.in);
 		number = input.nextInt();
 		input.close();
+		System.out.print("Prime numbers are : ");
 		primeNumbersFrom2ToNumber(number);
 	}
 
 	private static void primeNumbersFrom2ToNumber(int number) {
 
-		int i, m;
-		boolean flag;
-		m = number / 2;
-		for (i = 2; i <= m; i++) {
+		int i;
 
-			if (number % i == 0) {
-				flag = true;
-				break;
-			} else {
-				System.out.println(i;
+		for (i = 2; i <= number; i++) {
+			boolean flag = true;
+			for (int j = 2; j <= (i / 2); j++) {
+
+				if (i % j == 0) {
+					flag = false;
+					break;
+				}
 			}
+			if (flag) {
+				System.out.print(i+" ");
+			}
+
 		}
 
 	}

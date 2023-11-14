@@ -17,7 +17,7 @@ public class EncapsulationDemo {
 	public static void main(String[] args) {
 
 		EncapsulationDemo ed = new EncapsulationDemo();
-		ed.setAge(1);
+		ed.setAge(-1);
 		
 		
 	}
